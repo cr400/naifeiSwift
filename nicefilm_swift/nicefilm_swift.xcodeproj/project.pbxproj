@@ -20,6 +20,9 @@
 		84AF3353201739E600EF806C /* MobKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF3352201739E600EF806C /* MobKeys.swift */; };
 		84AF33552017435C00EF806C /* NFBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF33542017435C00EF806C /* NFBaseNavigationController.swift */; };
 		84AF335A20175A0900EF806C /* NFStaticModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AF335920175A0800EF806C /* NFStaticModel.swift */; };
+		F839A083201781BF004F4618 /* NFStaticTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839A082201781BF004F4618 /* NFStaticTableViewController.swift */; };
+		F839A08520178EB0004F4618 /* NFBaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839A08420178EB0004F4618 /* NFBaseTableViewCell.swift */; };
+		F839A08720178EC8004F4618 /* NFBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F839A08620178EC8004F4618 /* NFBaseCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		84AF3352201739E600EF806C /* MobKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobKeys.swift; sourceTree = "<group>"; };
 		84AF33542017435C00EF806C /* NFBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFBaseNavigationController.swift; sourceTree = "<group>"; };
 		84AF335920175A0800EF806C /* NFStaticModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFStaticModel.swift; sourceTree = "<group>"; };
+		F839A082201781BF004F4618 /* NFStaticTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFStaticTableViewController.swift; sourceTree = "<group>"; };
+		F839A08420178EB0004F4618 /* NFBaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFBaseTableViewCell.swift; sourceTree = "<group>"; };
+		F839A08620178EC8004F4618 /* NFBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFBaseCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +128,9 @@
 		84AF331A201719EC00EF806C /* nicefilm_swift */ = {
 			isa = PBXGroup;
 			children = (
+				F839A07F20178148004F4618 /* Discover */,
+				F839A07E20178142004F4618 /* Home */,
 				84AF33582017593E00EF806C /* Mine */,
-				84AF33572017593700EF806C /* Discover */,
-				84AF33562017592D00EF806C /* Home */,
 				84AF334F2017223400EF806C /* config */,
 				84AF334C20171DDD00EF806C /* base */,
 				84AF334920171D9200EF806C /* main */,
@@ -168,6 +174,8 @@
 			children = (
 				84AF334D20171E0800EF806C /* NFBaseViewController.swift */,
 				84AF33542017435C00EF806C /* NFBaseNavigationController.swift */,
+				F839A08420178EB0004F4618 /* NFBaseTableViewCell.swift */,
+				F839A08620178EC8004F4618 /* NFBaseCollectionViewCell.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -181,23 +189,11 @@
 			path = config;
 			sourceTree = "<group>";
 		};
-		84AF33562017592D00EF806C /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
-		84AF33572017593700EF806C /* Discover */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Discover;
-			sourceTree = "<group>";
-		};
 		84AF33582017593E00EF806C /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				F839A0812017818A004F4618 /* Static */,
+				F839A08020178154004F4618 /* Controller */,
 				84AF335920175A0800EF806C /* NFStaticModel.swift */,
 			);
 			path = Mine;
@@ -210,6 +206,35 @@
 				2799152CFC1A2080EA4BAA6A /* Pods-nicefilm_swift.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F839A07E20178142004F4618 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F839A07F20178148004F4618 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		F839A08020178154004F4618 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F839A0812017818A004F4618 /* Static */ = {
+			isa = PBXGroup;
+			children = (
+				F839A082201781BF004F4618 /* NFStaticTableViewController.swift */,
+			);
+			path = Static;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -424,11 +449,14 @@
 			files = (
 				84AF334B20171DD400EF806C /* NFMainViewController.swift in Sources */,
 				84AF331E201719EC00EF806C /* ViewController.swift in Sources */,
+				F839A08520178EB0004F4618 /* NFBaseTableViewCell.swift in Sources */,
 				84AF3353201739E600EF806C /* MobKeys.swift in Sources */,
 				84AF335A20175A0900EF806C /* NFStaticModel.swift in Sources */,
+				F839A083201781BF004F4618 /* NFStaticTableViewController.swift in Sources */,
 				84AF331C201719EC00EF806C /* AppDelegate.swift in Sources */,
 				84AF334E20171E0800EF806C /* NFBaseViewController.swift in Sources */,
 				84AF33552017435C00EF806C /* NFBaseNavigationController.swift in Sources */,
+				F839A08720178EC8004F4618 /* NFBaseCollectionViewCell.swift in Sources */,
 				84AF33512017224F00EF806C /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
