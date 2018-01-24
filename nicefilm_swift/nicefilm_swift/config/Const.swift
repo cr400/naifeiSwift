@@ -34,6 +34,54 @@ let Btn_Disable_COLOR = UIColor.init(red: 160.0/255.0, green: 169.0/255.0, blue:
 
 //背景颜色
 let VC_Bg_COLOR = NFHexRGB(rgbHexValue: 0xf1f1f4)
+
+let NAVIGATION_BAR_TITLE_FONT = NFRegularFont(font: 17) //导航条标题颜色字体
+let NAVIGATION_BAR_BUTTON_FONT = NFRegularFont(font: 14) //导航条按钮颜色字体
+
+let TABBAR_ITEM_NOMAL_FONT = NFRegularFont(font: 16)     //标签栏普通字体
+
+
+//导航栏背景颜色
+let NAVIGATION_BAR_BACKGROUND_COLOR  = UIColor.whiteColor
+//导航栏标题颜色
+let NAVIGATION_BAR_TITLE_COLOR = UIColor.blackColor
+//导航条按钮颜色颜色
+let NAVIGATION_BAR_BUTTON_COLOR = UIColor.blackColor
+//导航条按钮高亮颜色字体
+let NAVIGATION_BAR_BUTTON_HIGHCOLOR = UIColor.lightGrayColor
+
+//灰色背景色F4
+let VIEW_GRAY_COLOR = NFHexRGB(rgbHexValue:0xF4F4F4)
+
+//标签栏背景颜色
+let TABBAR_BACKGROUND_COLOR = UIColor.init(red: 120.f/255.f, green: 107.f/255.f, blue: 92.f/255.f, alpha: 1)
+
+//标签栏普通颜色
+let TABBAR_ITEM_NOMAL_COLOR = UIColor.white
+//标签栏选中颜色
+let TABBAR_ITEM_HIGH_COLOR = UIColor.white
+
+let VIEW_BORDER_BLACK_COLOR = NFHexRGB(rgbHexValue:0xcccccc)
+let VIEW_BORDER_WIDTH   =    0.5
+
+let LABEL_TEXT_BLACK_COLOR  = NFHexRGB(rgbHexValue:0x333333)
+let LABEL_TEXT_LIGHT_BLACK_COLOR = NFHexRGB(rgbHexValue:0x666666)
+
+let VIEW_RED_COLOR = NFHexRGB(rgbHexValue:0xFF2D55)
+let VIEW_RED_COLOR_Disable = NFHexRGB(rgbHexValue:0xE61616, a: 0.4)
+let VIEW_BACK_COLOR = NFHexRGB(rgbHexValue:0xF1F1F4)
+let LABEL_TEXT_LIGHT_LIGHT_BLACK_COLOR = NFHexRGB(rgbHexValue:0x999999)
+let LABEL_TEXT_LIGHT_LIGHT_BLACK_Disable_COLOR = NFHexRGB(rgbHexValue:0x999999, a: 0.4)
+
+let LABEL_TEXT_LIGHT_GRAY_BLACK_COLOR = NFHexRGB(rgbHexValue:0x9B9B9B)
+
+let LABEL_TEXT_CYAN_COLOR  = NFHexRGB(rgbHexValue:0x69BE87)
+let LABEL_TEXT_LIGHT_CYAN_COLOR  =  NFHexRGB(rgbHexValue:0x6699CC)
+
+let VIEW_LINE_BLACK_COLROR = NFHexRGB(rgbHexValue:0xcccccc)
+
+let VIEW_DARK_BLACK_COLOR = NFHexRGB(rgbHexValue:0x1F1F33)
+
 //-----
 
 //-----------------自定义通知名称
@@ -581,4 +629,16 @@ func NFScreenHeight() -> CGFloat {
     return UIScreen.main.bounds.height
 }
 
+func IS_IPHONE_X() -> Bool {
+    if (NFScreenHeight() == 812.f && NFScreenWidth() == 375.f) {
+        return true
+    }
+    return false
+}
 
+func kAppSafeAreaBottomHeight() -> CGFloat {
+    if (NFScreenHeight() == 812.f) {
+        return 36.f
+    }
+    return 0.f
+}

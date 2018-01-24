@@ -21,4 +21,9 @@ class NFBaseTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        self.selectionStyle = UITableViewCellSelectionStyle.none
+    }
 }
