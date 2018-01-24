@@ -19,7 +19,7 @@ class NFStaticModel: NSObject {
     var icon:UIImage?
     var clickAtIndexPath: clickAtIndexPathCloser?
     
-    class func itemWithText(text: String, icon: UIImage, itemClickBlock: clickAtIndexPathCloser) -> NFStaticModel {
+    class func itemWithText(text: String, icon: UIImage, itemClickBlock:@escaping  clickAtIndexPathCloser) -> NFStaticModel {
         let item = NFStaticModel.init()
         item.text = text
         item.icon = icon
