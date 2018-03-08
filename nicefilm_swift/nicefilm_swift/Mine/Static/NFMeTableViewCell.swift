@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import snapKit
+import SnapKit
 
 class NFMeTableViewCell: NFStaticTableViewCell {
 
@@ -36,11 +36,16 @@ class NFMeTableViewCell: NFStaticTableViewCell {
         }
         
         subTitleLabel?.textAlignment = NSTextAlignment.right
-        
-        iconImageView.snp.makeConstraints { (make) in
+        iconImageView?.snp.makeConstraints({ (make) in
             make.left.equalTo(16)
             make.centerY.equalTo(0)
-            make.size.
-        }
+            make.size.equalTo(CGSize.init(width: 24, height: 24))
+        })
+        
+        titleLabel?.snp.makeConstraints({ (make) in
+            make.left.equalTo(iconImageView?.snp.rightMargin).offset(16)
+            make.centerY.equalTo(0)
+            make.height.equalTo(22)
+        })
     }
 }
